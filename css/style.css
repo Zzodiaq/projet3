@@ -1,0 +1,287 @@
+
+:root {
+    --main-blue: #0065FC;
+    --clear-blue: #DEEBFF;
+    --grey: #D9D9D9;
+    --main-font: 'Raleway', sans-serif;
+  }
+
+body {
+  margin: 0;
+  max-width: 1400px;
+  margin: auto;
+  font-family: var(--main-font);
+}
+
+h1 {
+  font-size: 22px;
+  line-height: 1px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1px;
+  font-style: bold;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1px;
+  font-style: normal;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 0;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+::placeholder { 
+  color: black;
+  opacity: 1; 
+}
+
+.directionRow {
+  display: flex;  
+  flex-flow: row wrap;
+}
+
+.directionColumn {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-17 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 16px;
+}
+
+.container {
+  padding: 0 35px 0 35px;
+}
+
+.blue-btn-icon {
+    color: var(--main-blue);
+    padding-right: 10px;
+}
+
+.blue {
+  color: var(--main-blue);
+}
+
+.grey {
+  color: #f2f2f2;
+}
+
+/* ---------------------------nav bar--------------------------*/
+.nav-left {
+  width: 50%;
+  align-items: end;
+}
+
+.nav-right {
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.logo {
+  width: 61.09px;
+  height: 19px;
+}
+
+.btn-nav {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-top: 0;
+  background-color: #ffff;
+  height: 67px;
+  width: 162px;
+  cursor: pointer;
+}
+
+.btn-nav:hover a {
+  color: var(--main-blue);
+}
+
+.btn-nav:hover {
+  color: var(--main-blue);
+  border-top: 2px var(--main-blue) solid ;
+}
+
+/*--------------------------section 1-------------------------------*/
+
+.section-1 {
+  padding-top: 50px;
+}
+
+.search {
+  height: 49px;
+  width: 464px;
+  padding-top: 15px;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 15px 0 0 15px;
+  width: 50px;
+}
+
+.btn-search {
+  border: none;
+  background-color: var(--main-blue);
+  color: white;
+  border-radius: 0 15px 15px 0;
+  width: 120px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.input-search {
+  font-size: 18px;
+  color: black;
+  border-left: 0;
+  border-right: 0;
+  border: solid 1px #f2f2f2;
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+.input-search:focus {
+  outline: none;
+}
+
+.filtres {
+  width: 70%;
+  padding-top: 35px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-filtre {
+  height: 50px;
+  align-items: center;
+  border-radius: 25px;
+  border: 2px solid var(--grey);
+  background-color: white;
+  cursor: pointer;
+  padding: 0 15px 0 15px;
+}
+
+.btn-filtre:hover {
+  background-color: var(--clear-blue);
+}
+
+.information {
+  margin-top: 30px;
+  align-items: center;
+}
+
+.rond {
+  border: 1.5px solid var(--grey);
+  border-radius: 25px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+/*---------------------------------- hebergement -----------------------------*/
+
+.section-2 {
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+}
+
+.hebergement {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 35px 40px;
+}
+
+.photo-hebergement {
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap : 30px
+}
+
+.card {
+  height: fit-content;
+  width: 250px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 8px 8px 20px 8px;
+  align-items: center;
+}
+
+.card-description {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.images-heber {
+  height: 124px;
+  width: 246px;
+  border-radius: 20px 20px 0 0;
+}
+/*----------------------- les plus populaires--------------------*/
+
+.populaires {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 35px 40px;
+}
+
+.photo-populaires {
+  margin-top: 25px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 30px
+}
+
+.card-populaires {
+  background-color: white;
+  border-radius: 20px;
+  height: 145px;
+  width: 344px;
+}
+
+.populaires-title {
+  align-items: center;
+  width: 100%;
+}
+
+.set-end {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
