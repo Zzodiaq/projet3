@@ -191,12 +191,30 @@
 }
 
 @media screen and (max-width: 453px) { 
+    .section-1 {
+        margin: 0;
+    }
     
+    .btn-filtre h3 {
+        font-size: 0.6rem;
+    }
+
+    .location {
+        width: 3rem;
+    }
+
+    .input-search {
+        width: 12rem;
+    }
     /* .filtres h3 {
         
     } */
 
-    .btn-filtre {
-       width: 20vw;
+    /* .btn-filtre {
+       width: fit-content;
     }
+
+    .btn-filtre h3 {
+        width: 30%;
+    } */
 }
