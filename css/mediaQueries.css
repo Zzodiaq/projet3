@@ -70,6 +70,7 @@
 @media screen and (max-width: 768px) {
     body {
         max-width: 550px;
+        min-width: 320px;
     }
 
     .section-1 {
@@ -206,15 +207,4 @@
     .input-search {
         width: 12rem;
     }
-    /* .filtres h3 {
-        
-    } */
-
-    /* .btn-filtre {
-       width: fit-content;
-    }
-
-    .btn-filtre h3 {
-        width: 30%;
-    } */
 }

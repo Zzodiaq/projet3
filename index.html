@@ -11,26 +11,33 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mediaQueries.css">
     <title>Booki</title>
+    <meta name="description" content="Booki vous permet de trouver un hébergement pour vos vacances de rêves au centre ville comme en pleine nature !">
 </head>
 <body>
         <header>
+            <!-- nav bar  -->
             <nav class="navi directionRow">
+                 <!-- partie gauche de la nav -->
                 <div class="nav-left directionRow">
                     <a href="#">
                         <img class="logo" src="images/Images Booki/logo/Booki.png" alt="error">
                     </a>
                 </div>
+                 <!-- partie droite de la nav -->
                 <div class="nav-right directionRow">
-                    <button class="btn-nav fs-16">
+                    <button class="btn-nav">
+                        <!-- lien qui dirige vers la partie hebergement grace au href et à l'id donné à la partie hebergement  -->
                         <a href="#heb">Hébergements</a>
                     </button>
-                    <button class="btn-nav fs-16">
+                    <button class="btn-nav">
+                        <!-- lien qui dirige vers la partie activité grace au href et à l'id donné à la partie activité  -->
                         <a href="#act">Activités</a>
                     </button>
                 </div>
             </nav>
         </header>
         <main>
+            <!-- section 1 qui englobe le formulaire ainsi que la partie filtre et information -->
             <section class="section-1 directionColumn">
                 <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
                 <h4>En plein centre-ville ou en pleine nature</h4>
@@ -39,7 +46,7 @@
                             <div class="location">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
-                            <input type="text" placeholder="Marseille, France" class="input-search">
+                            <input type="text" placeholder="Marseille, France" class="input-search" name="input-recherche-ville">
                             <button class="btn-search">
                                 <h4>Rechercher</h4>
                                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
@@ -80,10 +87,14 @@
                     </div>
                 </div>                  
             </section>
+            <!-- section qui contient toute la partie hebergement ainsi que les plus populaires -->
             <section class="section-2">
+                <!-- div qui englobe la partie hebergement -->
                 <div id="heb" class="hebergement directionColumn">
                     <h1 class="hebergement-title">Hébergements à Marseille</h1>
+                    <!-- div qui englobe toutes les card de la partie hebergement -->
                     <div class="photo-hebergement">
+                        <!-- card hebergement dans une balise lien -->
                         <a href="#">
                             <div class="directionColumn card">
                                 <img class="images-heber" src="images/Images Booki/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="error">
@@ -181,14 +192,19 @@
                             </div>
                         </a>
                     </div>
+                    <!-- footer de la partie hebergement  -->
                     <h2 class="hebergement-footer">Afficher plus</h2>
                 </div>
+                <!-- div qui contient la partie les plus populaires -->
                 <div class="populaires ">
+                    <!-- titre de la partie les plus populaires -->
                     <div class="directionRow populaires-title">
                         <h1>Les plus populaires</h1>
                             <i class="fa-solid fa-chart-line blue fa-lg"></i>
                     </div>
+                    <!-- div qui contient les cards -->
                     <div class="photo-populaires">
+                        <!-- card populaire   -->
                         <a  class="card-pop-link" href="#">
                             <div class="card-populaires">
                                 <img class="image-populaire" src="images/Images Booki/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="error">
@@ -246,9 +262,12 @@
                     </div>
                 </div>
             </section>
+            <!-- section contenant la partie activité -->
             <section class="section-3">
+                <!-- div qui contient la div qui englobe les cards ainsi que le titre -->
                 <div id="act" class="activite">
                     <h1 class="activite-title">Activités à Marseille</h1>
+                    <!-- div qui contient les cards activité  -->
                     <div class="card-activite-container">
                         <a href="#" class="a-activite">
                             <div class="card-activite directionColumn">
